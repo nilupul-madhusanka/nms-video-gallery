@@ -3,62 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NMS</title>
-    <style>
-        body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #f0f0f0;
-}
-
-.container {
-    text-align: center;
-    background: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.image-container img {
-    max-width: 100%;
-    height: auto;
-    border: 2px solid #ddd;
-    border-radius: 10px;
-    transition: transform 0.5s;
-}
-
-.image-container img:hover {
-    transform: scale(1.05);
-}
-
-.download-button-container {
-    margin-top: 20px;
-}
-
-.download-button {
-    display: inline-block;
-    padding: 10px 20px;
-    color: #fff;
-    background-color: #0e5df1;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-    </style>
+    <title>NMS Video Gallery</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>The Incredible Cheems</h1>
-        <div class="image-container">
-            <img src="cheems.jpg" alt="View Image">
+    <header>
+        <div class="logo">
+            <h1>Video Gallery</h1>
         </div>
-        <div class="download-button-container">
-            <a href="cheems.jpg" download class="download-button">Download Image</a>
+        <div class="search-bar">
+            <input type="text" placeholder="Search">
         </div>
-    </div>
+    </header>
+
+    <main>
+        <div class="video-grid">
+            <div class="video-card">
+                <video src="mp4/1.mp4" controls></video>
+                <h3>1</h3>
+            </div>
+            <div class="video-card">
+                <video src="mp4/2.mp4" controls></video>
+                <h3>2</h3>
+            </div>
+            <div class="video-card">
+                <video src="mp4/3.mp4" controls></video>
+                <h3>3</h3>
+            </div>
+			<div class="video-card">
+                <video src="mp4/4.mp4" controls></video>
+                <h3>4</h3>
+            </div>
+			<div class="video-card">
+                <video src="mp4/5.mp4" controls></video>
+                <h3>5</h3>
+            </div>
+			<div class="video-card">
+                <video src="mp4/6.mp4" controls></video>
+                <h3>6</h3>
+            </div>
+			<div class="video-card">
+                <video src="mp4/7.mp4" controls></video>
+                <h3>7</h3>
+            </div>
+			<div class="video-card">
+                <video src="mp4/8.mp4" controls></video>
+                <h3>8</h3>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
