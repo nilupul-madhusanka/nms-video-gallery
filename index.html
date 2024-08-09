@@ -3,26 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NMS Video Gallery</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Video Player</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        video {
+            width: 100%;
+            max-width: 1270px;
+            height: auto;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <h1>Video Gallery</h1>
-        </div>
-        <div class="search-bar">
-            <input type="text" placeholder="Search">
-        </div>
-    </header>
-
-    <main>
-        <div class="video-grid">
-            <div class="video-card">
-                <video src="https://dl.dropboxusercontent.com/scl/fi/0xwmd2stk2uib7xyie76p/Jalebi2018.mkv?rlkey=yk2qalycnthxdifjonhkjgn5f&st=8hdn29pk" controls></video>
-                <h3>1</h3>
-            </div>
-        </div>
-    </main>
+    <h1>Video Test 1</h1>
+    <video controls>
+        <source src="https://dl.dropboxusercontent.com/scl/fi/seuwob6d0g73tdnfp7guh/Akshath-Nadaaniyan-Official-Video-Aisha-Ahmed_Full-HD.mp4?rlkey=xhxrh5edmjfev7cnpwx7tdmc9&st=n8wodl3b" type="video/mp4">
+    </video>
 </body>
 </html>
